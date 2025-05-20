@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: jssco7avx-nodejs-gitops
+  description: This is GitOps manifest for jssco7avx-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=jssco7avx-nodejs
+    backstage.io/kubernetes-id: jssco7avx-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: jssco7avx-nodejs
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:jssco7avx-nodejs

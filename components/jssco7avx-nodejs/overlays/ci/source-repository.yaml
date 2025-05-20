@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: jssco7avx-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/jssco7avx-nodejs
